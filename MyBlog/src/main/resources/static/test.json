@@ -1,0 +1,67 @@
+{
+  "draw": 1,
+  "recordsTotal": 57,
+  "recordsFiltered": 57,
+  "data": [
+    {
+      "name":"1",
+      "age":"1",
+      "sex":"1",
+      "time":"1"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    },
+    {
+      "name":"2",
+      "age":"2",
+      "sex":"2",
+      "time":"2"
+    }
+  ]
+}
