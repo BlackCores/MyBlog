@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: com.blog:blog-model:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/JAVA/repository/com/blog/blog-model/1.0-SNAPSHOT/blog-model-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/blog-model/blog-model-1.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://D:/JAVA/repository/com/blog/blog-model/1.0-SNAPSHOT/blog-model-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/blog-model/blog-model-1.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://D:/JAVA/repository/com/blog/blog-model/1.0-SNAPSHOT/blog-model-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
