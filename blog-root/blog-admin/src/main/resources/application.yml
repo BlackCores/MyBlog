@@ -3,56 +3,43 @@ server:
   servlet:
     context-path: /
 spring:
-    profiles:
-      #数据源
-      active: jdbc-company
-    mvc:
-      #设置静态资源路径
-      static-path-pattern: /static/**
-    jpa:
-      database: mysql
-      show-sql: true
+  profiles:
+    #数据源
+    active: jdbc-company
+  mvc:
+    #设置静态资源路径
+    static-path-pattern: /static/**
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
       hibernate:
-        ddl-auto: update
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.MySQL5Dialect
-          #懒加载配置
-          enable_lazy_load_no_trans: true
-    redis:
-      jedis:
-        pool:
-          #最大连接数
-          max-active: 8
-          #最大阻塞等待时间(负数表示没限制)
-          max-wait: -1
-          #最大空闲
-          max-idle: 8
-          #最小空闲
-          min-idle: 0
-      #连接超时时间
-      timeout: 10000
-    jackson:
-      #为null时不返回
-      default-property-inclusion: non_null
-    datasource:
-      druid:
-        #初始化链接数
-        initial-size: 5
-        #最大连接
-        max-active: 20
-        #最小空闲
-        min-idle: 10
-        #最大超时ms
-        max-wait: 3000
-        #检测关闭空闲连接的时间ms
-        time-between-eviction-runs-millis: 60000
-        #filter
-        filters: stat,wall
-        filter:
-          stat:
-            log-slow-sql: true
-            slow-sql-millis: 2000
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        #懒加载配置
+        enable_lazy_load_no_trans: true
+  jackson:
+    #为null时不返回
+    default-property-inclusion: non_null
+  datasource:
+    druid:
+      #初始化链接数
+      initial-size: 5
+      #最大连接
+      max-active: 20
+      #最小空闲
+      min-idle: 10
+      #最大超时ms
+      max-wait: 3000
+      #检测关闭空闲连接的时间ms
+      time-between-eviction-runs-millis: 60000
+      #filter
+      filters: stat,wall
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 2000
 shiro:
   login_url: /login
   success_url: /index
