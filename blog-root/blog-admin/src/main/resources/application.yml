@@ -40,6 +40,16 @@ spring:
         stat:
           log-slow-sql: true
           slow-sql-millis: 2000
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: *.gif,*.png,*.jpg,*.html,*.js,*.css,*.ico,/druid/*
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: admin
+        login-password: admin
 shiro:
   login_url: /login
   success_url: /index
