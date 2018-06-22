@@ -84,16 +84,19 @@ public class PwdUtil {
         MessageDigest md5=MessageDigest.getInstance(ALGORITHM_NAME);
         BASE64Encoder base64en = new BASE64Encoder();
         String newstr=base64en.encode(md5.digest(str.getBytes("utf-8")));
-        System.out.println(newstr);
         return newstr;
     }
 
     public static void main(String[] args) {
-        try {
-            md5("333");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Map<String, String> stringStringMap = encryptPwd("123");
+        System.out.println(stringStringMap);
+
+        String encrypt = encrypt("123", stringStringMap.get("salt"));
+        System.out.println(encrypt);
+
+
+//        String random = RandomStringUtils.random(16, true, true);
+//        System.out.println(random);
     }
 
 }
