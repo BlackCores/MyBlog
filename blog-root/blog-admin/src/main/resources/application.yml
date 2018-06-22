@@ -43,7 +43,6 @@ spring:
       web-stat-filter:
         enabled: true
         url-pattern: /*
-        exclusions: *.gif,*.png,*.jpg,*.html,*.js,*.css,*.ico,/druid/*
       stat-view-servlet:
         enabled: true
         url-pattern: /druid/*
